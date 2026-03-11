@@ -117,6 +117,10 @@ body {
 
 .project {
   margin-bottom: 40px;
+  border: #757a7f 2px solid;
+  padding: 30px;
+  border-radius: 8px;
+
 }
 
 .project-title {
