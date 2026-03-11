@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vo Trinh Khang - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Section -->
+      <aside class="left-section">
+        <div class="profile">
+          <h1 class="name">Vo Trinh Khang</h1>
+
+          <div class="profile-image">
+            <img src="./img/avatar.png" alt="Hoc Pham" />
+          </div>
+
+          <div class="links">
+            <!-- <a href="./file/Rezume (1).pdf">Resume</a> -->
+            <span class="separator">|</span>
+            <a
+              href="https://www.linkedin.com/in/twynkhazg/"
+              >LinkedIn</a
+            >
+            <span class="separator">|</span>
+            <a href="https://github.com/TRINHKHANGITER">GitHub</a>
+          </div>
+
+          <div class="bio">
+            <p>
+              I am a third-year student at Saigon University, majoring in
+              Software Engineering.
+            </p>
+
+            <p>
+              I am passionate about web development, programming, and building
+              innovative software solutions.
+            </p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right Section -->
+      <main class="right-section">
+        <h1 class="portfolio-title">Portfolio</h1>
+
+        <!-- AI & ML Projects -->
+        <section class="portfolio-section">
+          <h2 class="section-title">AI & Machine Learning Projects</h2>
+
+          <div class="project">
+            <h3 class="project-title">RAG System - Chat với Tài Liệu PDF</h3>
+
+            <p class="project-description">
+              Upload a PDF file and ask questions — the AI will answer based on the document content!
+The system uses Retrieval-Augmented Generation (RAG) with the Qwen2.5:7B LLM running locally via Ollama, combined with a FAISS vector database for contextual retrieval and LangChain to generate intelligent responses.
+It features a modern Streamlit interface with automatic Vietnamese–English bilingual support.
+            </p>
+
+            <!-- <div class="button-group">
+              <a
+                href="https://github.com/Hocpham1102/Project-RAG-Agent"
+                target="_blank"
+                class="github-button"
+              >
+                <i class="fab fa-github"></i>
+                <span class="github-label">GitHub</span>
+                <span class="separator">|</span>
+                <span class="github-action">View on GitHub</span>
+              </a>
+            </div> -->
+
+            <div class="project-details">
+              <h4>Key Features & Architecture:</h4>
+
+              <div class="architecture-flow">
+                <img
+                  src="./img/rag.gif"
+                  alt="RAG Document Processing Flow"
+                  style="
+                    width: 100%;
+                    max-width: 800px;
+                    margin: 20px auto;
+                    display: block;
+                    border-radius: 8px;
+                  "
+                />
+              </div>
+
+              <p>
+                <strong>Document Processing:</strong> PDFPlumber extracts text,
+                chunks into 1000-character segments with 100-char overlap,
+                generates 768-dimensional embeddings using MPNet multilingual
+                model, stores in FAISS for similarity search (retrieves top-3
+                relevant chunks per query).
+              </p>
+
+              <div class="architecture-flow">
+                <img
+                  src="./img/2.png"
+                  alt="RAG Query Pipeline Flow"
+                  style="
+                    width: 100%;
+                    max-width: 800px;
+                    margin: 20px auto;
+                    display: block;
+                    border-radius: 8px;
+                  "
+                />
+              </div>
+
+              <p>
+                <strong>Query Pipeline:</strong> Automatic Vietnamese/English
+                detection → Custom prompt engineering → Vector retrieval →
+                Qwen2.5:7b (7B parameters) generates contextual answers → No API
+                costs, complete privacy with local LLM.
+              </p>
+
+              <h4>Technologies & Requirements:</h4>
+              <div class="tech-stack">
+                <a
+                  href="https://www.python.org/"
+                  target="_blank"
+                  class="tech-badge"
+                  >Python 3.8+</a
+                >
+                <a
+                  href="https://streamlit.io/"
+                  target="_blank"
+                  class="tech-badge"
+                  >Streamlit</a
+                >
+                <a
+                  href="https://python.langchain.com/"
+                  target="_blank"
+                  class="tech-badge"
+                  >LangChain 0.3.16</a
+                >
+                <a
+                  href="https://github.com/facebookresearch/faiss"
+                  target="_blank"
+                  class="tech-badge"
+                  >FAISS</a
+                >
+                <a href="https://ollama.com/" target="_blank" class="tech-badge"
+                  >Ollama</a
+                >
+                <a
+                  href="https://github.com/QwenLM/Qwen2.5"
+                  target="_blank"
+                  class="tech-badge"
+                  >Qwen2.5:7b</a
+                >
+                <a
+                  href="https://huggingface.co/"
+                  target="_blank"
+                  class="tech-badge"
+                  >HuggingFace</a
+                >
+                <a
+                  href="https://github.com/jsvine/pdfplumber"
+                  target="_blank"
+                  class="tech-badge"
+                  >PDFPlumber</a
+                >
+                <a
+                  href="https://www.sbert.net/"
+                  target="_blank"
+                  class="tech-badge"
+                  >Sentence-Transformers</a
+                >
+              </div>
+              <p style="margin-top: 15px">
+                <strong>System Requirements:</strong> Python 3.8+ | RAM 8GB+
+                (16GB recommended) | ~10GB storage for Qwen2.5:7b model | Ollama
+                installed
+              </p>
+
+              <h4>Technical Component Details:</h4>
+
+              <div class="tech-details">
+                <div class="tech-item">
+                  <h5>Python 3.8+ & Streamlit</h5>
+                  <p>
+                    <strong>Python</strong> là ngôn ngữ lập trình core cho ML/AI
+                    với ecosystem phong phú (NumPy, Pandas).
+                    <strong>Streamlit 1.41.1</strong> cung cấp web framework để
+                    build interactive UI chỉ với Python thuần - không cần
+                    HTML/CSS/JS. Session state management cho chat history, file
+                    upload widget cho PDF, và real-time streaming response từ
+                    LLM.
+                  </p>
+                </div>
+
+                <div class="tech-item">
+                  <h5>LangChain 0.3.16</h5>
+                  <p>
+                    Framework orchestration cho LLM applications. Sử dụng
+                    <strong>OllamaLLM wrapper</strong> để tích hợp Qwen2.5,
+                    <strong>RecursiveCharacterTextSplitter</strong> cho
+                    intelligent chunking (tôn trọng paragraph/sentence
+                    boundaries), <strong>RetrievalQA chain</strong> kết hợp
+                    retriever + LLM, và <strong>PromptTemplate</strong> cho
+                    context injection + instruction engineering.
+                  </p>
+                </div>
+
+                <div class="tech-item">
+                  <h5>FAISS (Facebook AI Similarity Search)</h5>
+                  <p>
+                    Vector database tối ưu cho similarity search với
+                    <strong>IndexFlatL2</strong> (exact L2 distance). Lưu trữ
+                    768-dim embeddings, search algorithm trả về top-k most
+                    similar vectors trong O(n) time. Serialization support cho
+                    persistent storage (save/load vector index). Xử lý được
+                    millions of vectors efficiently.
+                  </p>
+                </div>
+
+                <div class="tech-item">
+                  <h5>Ollama + Qwen2.5:7b</h5>
+                  <p>
+                    <strong>Ollama</strong> là local LLM runtime (như Docker cho
+                    AI models) - download, run, manage models dễ dàng.
+                    <strong>Qwen2.5:7b</strong> (Alibaba Cloud) có 7 billion
+                    parameters, hỗ trợ multilingual (Vi/En), context window 32K
+                    tokens, instruction-tuned for chat/QA, và chạy hoàn toàn
+                    offline - zero API costs, complete data privacy.
+                  </p>
+                </div>
+
+                <div class="tech-item">
+                  <h5>HuggingFace + Sentence-Transformers</h5>
+                  <p>
+                    <strong>HuggingFace</strong> cung cấp model hub với hàng
+                    nghìn pretrained models.
+                    <strong>Sentence-Transformers</strong> library tạo semantic
+                    embeddings - sử dụng
+                    <strong>paraphrase-multilingual-mpnet-base-v2</strong> model
+                    (50+ languages, 768 dimensions) để convert text thành dense
+                    vectors. Cosine similarity giữa vectors đo semantic meaning
+                    tương đương.
+                  </p>
+                </div>
+
+                <div class="tech-item">
+                  <h5>PDFPlumber</h5>
+                  <p>
+                    Python library extract text từ PDF files với high accuracy.
+                    Parse PDF structure (text, tables, metadata), xử lý complex
+                    layouts, preserve formatting, và handle multi-page
+                    documents. Alternative cho PyPDF2/pdfminer với API đơn giản
+                    hơn và better text extraction quality.
+                  </p>
+                </div>
+              </div>
+
+              <h4>Why This Tech Stack?</h4>
+              <p>
+                <strong>100% Local & Private:</strong> Ollama + Qwen2.5 = zero
+                cloud dependency, không gửi data ra external APIs (GDPR
+                compliant). <strong>Production-Ready:</strong> FAISS scaling đến
+                millions vectors, LangChain có robust error handling.
+                <strong>Multilingual:</strong> MPNet embeddings + Qwen2.5
+                support Vietnamese và English natively.
+                <strong>Cost-Effective:</strong> One-time setup, zero API fees,
+                chạy unlimited queries.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
