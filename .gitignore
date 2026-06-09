@@ -12,3 +12,5 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+
+**/video_demo_app.mp4
