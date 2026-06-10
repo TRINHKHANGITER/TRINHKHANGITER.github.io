@@ -1,395 +1,289 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vo Trinh Khang - Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio cá nhân của Võ Trịnh Khang - sinh viên Kỹ thuật phần mềm tập trung vào web development và hệ thống quản lý."
+      data-i18n-attr="content:meta.homeDescription"
+    />
+    <title data-i18n="meta.homeTitle">Võ Trịnh Khang | Portfolio cá nhân</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
   </head>
   <body>
-    <div class="container">
-      <!-- Left Section -->
-      <aside class="left-section">
-        <div class="profile">
-          <h1 class="name">Vo Trinh Khang</h1>
+    <header class="site-header">
+      <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Võ Trịnh Khang">
+        <span class="brand-mark">VK</span>
+        <span>
+          <strong>Võ Trịnh Khang</strong>
+          <small data-i18n="profile.role">Sinh viên Kỹ thuật phần mềm</small>
+        </span>
+      </a>
 
-          <div class="profile-image">
-            <img src="./img/avatar.png" alt="Hoc Pham" />
-          </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#home" data-section="home" data-i18n="nav.home">Trang chủ</a>
+        <a href="#about" data-section="about" data-i18n="nav.about">Giới thiệu</a>
+        <a href="#skills" data-section="skills" data-i18n="nav.skills">Kỹ năng</a>
+        <a href="#contact" data-section="contact" data-i18n="nav.contact">Liên hệ</a>
+      </nav>
 
-          <div class="links">
-            <a href="./file/Rezume.pdf">Resume</a>
-            <span class="separator">|</span>
-            <a
-              href="https://www.linkedin.com/in/twynkhazg/"
-              >LinkedIn</a
-            >
-            <span class="separator">|</span>
-            <a href="https://github.com/TRINHKHANGITER">GitHub</a>
-          </div>
+      <div class="header-actions">
+        <a class="resume-link" href="Rezume.pdf" target="_blank" rel="noopener noreferrer" data-i18n="nav.resume">
+          Resume
+        </a>
+        <div class="language-switch" aria-label="Language switcher">
+          <button type="button" data-language="vi">VI</button>
+          <button type="button" data-language="en">EN</button>
+        </div>
+      </div>
+      </div>
+    </header>
 
-          <div class="bio">
-            <p>
-              I am a third-year student at Saigon University, majoring in
-              Software Engineering.
-            </p>
-
-            <p>
-              I am passionate about web development, programming, and building
-              innovative software solutions.
-            </p>
+    <main>
+      <section class="home-hero page-section" id="home" data-nav-section="home">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="home.eyebrow">Portfolio cá nhân</p>
+          <h1 data-i18n="home.title">Xin chào, tôi là Võ Trịnh Khang.</h1>
+          <p class="hero-text" data-i18n="home.description">
+            Tôi là sinh viên năm ba ngành Kỹ thuật phần mềm tại Trường Đại học Sài Gòn, tập trung xây dựng ứng dụng web, hệ thống quản lý và các sản phẩm phần mềm có trải nghiệm rõ ràng.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="#about" data-i18n="home.primaryCta">Xem giới thiệu</a>
+            <a class="button button-secondary" href="#contact" data-i18n="home.secondaryCta">Liên hệ</a>
+            <a class="resume-link" href="Rezume.pdf" target="_blank" rel="noopener noreferrer" data-i18n="nav.resume"> Resume </a>
           </div>
         </div>
-      </aside>
 
-      <!-- Right Section -->
-      <main class="right-section">
-        <h1 class="portfolio-title">Portfolio</h1>
+        <div class="portrait-panel">
+          <img src="../img/avatar.png" alt="Võ Trịnh Khang" />
+          <div class="portrait-caption">
+            <span data-i18n="profile.location">TP. Hồ Chí Minh, Việt Nam</span>
+            <strong data-i18n="profile.focus">Web development, AI tooling, hệ thống quản lý</strong>
+          </div>
+        </div>
+      </section>
 
-        <!-- AI & ML Projects -->
-        <section class="portfolio-section">
-          <h2 class="section-title">AI & Machine Learning Projects</h2>
+      <section class="stats-strip" aria-label="Portfolio summary">
+        <article>
+          <strong>03+</strong>
+          <span data-i18n="home.stats.year">Năm học nền tảng phần mềm</span>
+        </article>
+        <article>
+          <strong>Full-stack</strong>
+          <span data-i18n="home.stats.stack">Định hướng phát triển web</span>
+        </article>
+        <article>
+          <strong>VI/EN</strong>
+          <span data-i18n="home.stats.language">Giao tiếp và giao diện song ngữ</span>
+        </article>
+      </section>
 
-          <div class="project">
-            <h3 class="project-title">RAG System - Chat với Tài Liệu PDF</h3>
+      <section class="page-section" id="about" data-nav-section="about">
+        <div class="page-hero">
+          <p class="eyebrow" data-i18n="about.eyebrow">Giới thiệu</p>
+          <h1 data-i18n="about.title">Tôi xây dựng phần mềm với tư duy rõ ràng và thực tế.</h1>
+          <p data-i18n="about.intro">
+            Tôi là Võ Trịnh Khang, sinh viên năm ba ngành Kỹ thuật phần mềm tại Trường Đại học Sài Gòn. Tôi quan tâm đến cách một sản phẩm phần mềm được thiết kế, triển khai và vận hành để giải quyết đúng nhu cầu người dùng.
+          </p>
+        </div>
 
-            <p class="project-description">
-              Upload a PDF file and ask questions — the AI will answer based on the document content!
-The system uses Retrieval-Augmented Generation (RAG) with the Qwen2.5:7B LLM running locally via Ollama, combined with a FAISS vector database for contextual retrieval and LangChain to generate intelligent responses.
-It features a modern Streamlit interface with automatic Vietnamese–English bilingual support.
-            </p>
-
-            <!-- <div class="button-group">
-              <a
-                href="https://github.com/Hocpham1102/Project-RAG-Agent"
-                target="_blank"
-                class="github-button"
-              >
-                <i class="fab fa-github"></i>
-                <span class="github-label">GitHub</span>
-                <span class="separator">|</span>
-                <span class="github-action">View on GitHub</span>
-              </a>
-            </div> -->
-
-            <div class="project-details">
-              <h4>Key Features & Architecture:</h4>
-
-              <div class="architecture-flow">
-                <img
-                  src="./img/rag.gif"
-                  alt="RAG Document Processing Flow"
-                  style="
-                    width: 100%;
-                    max-width: 800px;
-                    margin: 20px auto;
-                    display: block;
-                    border-radius: 8px;
-                  "
-                />
-              </div>
-
-              <p>
-                <strong>Document Processing:</strong> PDFPlumber extracts text,
-                chunks into 1000-character segments with 100-char overlap,
-                generates 768-dimensional embeddings using MPNet multilingual
-                model, stores in FAISS for similarity search (retrieves top-3
-                relevant chunks per query).
-              </p>
-
-              <div class="architecture-flow">
-                <img
-                  src="./img/2.png"
-                  alt="RAG Query Pipeline Flow"
-                  style="
-                    width: 100%;
-                    max-width: 800px;
-                    margin: 20px auto;
-                    display: block;
-                    border-radius: 8px;
-                  "
-                />
-              </div>
-
-              <p>
-                <strong>Query Pipeline:</strong> Automatic Vietnamese/English
-                detection → Custom prompt engineering → Vector retrieval →
-                Qwen2.5:7b (7B parameters) generates contextual answers → No API
-                costs, complete privacy with local LLM.
-              </p>
-
-              <h4>Technologies & Requirements:</h4>
-              <div class="tech-stack">
-                <a
-                  href="https://www.python.org/"
-                  target="_blank"
-                  class="tech-badge"
-                  >Python 3.8+</a
-                >
-                <a
-                  href="https://streamlit.io/"
-                  target="_blank"
-                  class="tech-badge"
-                  >Streamlit</a
-                >
-                <a
-                  href="https://python.langchain.com/"
-                  target="_blank"
-                  class="tech-badge"
-                  >LangChain 0.3.16</a
-                >
-                <a
-                  href="https://github.com/facebookresearch/faiss"
-                  target="_blank"
-                  class="tech-badge"
-                  >FAISS</a
-                >
-                <a href="https://ollama.com/" target="_blank" class="tech-badge"
-                  >Ollama</a
-                >
-                <a
-                  href="https://github.com/QwenLM/Qwen2.5"
-                  target="_blank"
-                  class="tech-badge"
-                  >Qwen2.5:7b</a
-                >
-                <a
-                  href="https://huggingface.co/"
-                  target="_blank"
-                  class="tech-badge"
-                  >HuggingFace</a
-                >
-                <a
-                  href="https://github.com/jsvine/pdfplumber"
-                  target="_blank"
-                  class="tech-badge"
-                  >PDFPlumber</a
-                >
-                <a
-                  href="https://www.sbert.net/"
-                  target="_blank"
-                  class="tech-badge"
-                  >Sentence-Transformers</a
-                >
-              </div>
-              <p style="margin-top: 15px">
-                <strong>System Requirements:</strong> Python 3.8+ | RAM 8GB+
-                (16GB recommended) | ~10GB storage for Qwen2.5:7b model | Ollama
-                installed
-              </p>
-
-              <h4>Technical Component Details:</h4>
-
-              <div class="tech-details">
-                <div class="tech-item">
-                  <h5>Python 3.8+ & Streamlit</h5>
-                  <p>
-                    <strong>Python</strong> là ngôn ngữ lập trình core cho ML/AI
-                    với ecosystem phong phú (NumPy, Pandas).
-                    <strong>Streamlit 1.41.1</strong> cung cấp web framework để
-                    build interactive UI chỉ với Python thuần - không cần
-                    HTML/CSS/JS. Session state management cho chat history, file
-                    upload widget cho PDF, và real-time streaming response từ
-                    LLM.
-                  </p>
-                </div>
-
-                <div class="tech-item">
-                  <h5>LangChain 0.3.16</h5>
-                  <p>
-                    Framework orchestration cho LLM applications. Sử dụng
-                    <strong>OllamaLLM wrapper</strong> để tích hợp Qwen2.5,
-                    <strong>RecursiveCharacterTextSplitter</strong> cho
-                    intelligent chunking (tôn trọng paragraph/sentence
-                    boundaries), <strong>RetrievalQA chain</strong> kết hợp
-                    retriever + LLM, và <strong>PromptTemplate</strong> cho
-                    context injection + instruction engineering.
-                  </p>
-                </div>
-
-                <div class="tech-item">
-                  <h5>FAISS (Facebook AI Similarity Search)</h5>
-                  <p>
-                    Vector database tối ưu cho similarity search với
-                    <strong>IndexFlatL2</strong> (exact L2 distance). Lưu trữ
-                    768-dim embeddings, search algorithm trả về top-k most
-                    similar vectors trong O(n) time. Serialization support cho
-                    persistent storage (save/load vector index). Xử lý được
-                    millions of vectors efficiently.
-                  </p>
-                </div>
-
-                <div class="tech-item">
-                  <h5>Ollama + Qwen2.5:7b</h5>
-                  <p>
-                    <strong>Ollama</strong> là local LLM runtime (như Docker cho
-                    AI models) - download, run, manage models dễ dàng.
-                    <strong>Qwen2.5:7b</strong> (Alibaba Cloud) có 7 billion
-                    parameters, hỗ trợ multilingual (Vi/En), context window 32K
-                    tokens, instruction-tuned for chat/QA, và chạy hoàn toàn
-                    offline - zero API costs, complete data privacy.
-                  </p>
-                </div>
-
-                <div class="tech-item">
-                  <h5>HuggingFace + Sentence-Transformers</h5>
-                  <p>
-                    <strong>HuggingFace</strong> cung cấp model hub với hàng
-                    nghìn pretrained models.
-                    <strong>Sentence-Transformers</strong> library tạo semantic
-                    embeddings - sử dụng
-                    <strong>paraphrase-multilingual-mpnet-base-v2</strong> model
-                    (50+ languages, 768 dimensions) để convert text thành dense
-                    vectors. Cosine similarity giữa vectors đo semantic meaning
-                    tương đương.
-                  </p>
-                </div>
-
-                <div class="tech-item">
-                  <h5>PDFPlumber</h5>
-                  <p>
-                    Python library extract text từ PDF files với high accuracy.
-                    Parse PDF structure (text, tables, metadata), xử lý complex
-                    layouts, preserve formatting, và handle multi-page
-                    documents. Alternative cho PyPDF2/pdfminer với API đơn giản
-                    hơn và better text extraction quality.
-                  </p>
-                </div>
-              </div>
-
-              <h4>Why This Tech Stack?</h4>
-              <p>
-                <strong>100% Local & Private:</strong> Ollama + Qwen2.5 = zero
-                cloud dependency, không gửi data ra external APIs (GDPR
-                compliant). <strong>Production-Ready:</strong> FAISS scaling đến
-                millions vectors, LangChain có robust error handling.
-                <strong>Multilingual:</strong> MPNet embeddings + Qwen2.5
-                support Vietnamese và English natively.
-                <strong>Cost-Effective:</strong> One-time setup, zero API fees,
-                chạy unlimited queries.
-              </p>
+        <div class="about-layout">
+          <div class="profile-card">
+            <img src="../img/avatar.png" alt="Võ Trịnh Khang" />
+            <div>
+              <h2>Võ Trịnh Khang</h2>
+              <p data-i18n="profile.focus">Web development, AI tooling, hệ thống quản lý</p>
             </div>
           </div>
 
-          <!-- Smart School Bus Tracking System -->
-<div class="project">
-  <h3 class="project-title">Smart School Bus Tracking System</h3>
+          <div class="about-content">
+            <article>
+              <h2 data-i18n="about.experienceTitle">Kinh nghiệm học tập và thực hành</h2>
+              <p data-i18n="about.experienceText">
+                Tôi đã thực hành nhiều bài tập web và hệ thống quản lý trong quá trình học, từ giao diện người dùng, luồng nghiệp vụ, quản lý dữ liệu đến tích hợp API. Tôi quen với việc đọc yêu cầu, chia nhỏ chức năng, thiết kế màn hình và kiểm tra lại trải nghiệm sử dụng.
+              </p>
+            </article>
 
-  <p class="project-description">
-    A smart transportation management system designed to monitor and optimize school bus operations in real time.
-    The system allows administrators, drivers, and parents to track bus routes, manage schedules, and receive notifications.
-    
-    The project focuses on improving student safety and transportation efficiency by combining real-time tracking
-    with route optimization algorithms such as the Travelling Salesman Problem (TSP).
-  </p>
+            <article>
+              <h2 data-i18n="about.skillTitle">Kỹ năng nổi bật</h2>
+              <p data-i18n="about.skillText">
+                Tôi tập trung vào nền tảng HTML, CSS, JavaScript, React, backend API, database và cách tổ chức code dễ bảo trì. Ngoài kỹ thuật, tôi rèn luyện khả năng tự học, phân tích vấn đề, làm việc nhóm và trình bày ý tưởng mạch lạc.
+              </p>
+            </article>
 
-  <div class="project-details">
+            <article>
+              <h2 data-i18n="about.interestTitle">Sở thích</h2>
+              <p data-i18n="about.interestText">
+                Tôi thích tìm hiểu công nghệ mới, thử nghiệm các công cụ AI hỗ trợ lập trình, đọc tài liệu kỹ thuật và cải thiện giao diện để sản phẩm dễ dùng hơn.
+              </p>
+            </article>
 
-    <h4>System Overview</h4>
+            <article>
+              <h2 data-i18n="about.goalTitle">Mục tiêu nghề nghiệp</h2>
+              <p data-i18n="about.goalText">
+                Mục tiêu của tôi là trở thành lập trình viên phần mềm có nền tảng full-stack vững, có khả năng xây dựng sản phẩm thực tế từ ý tưởng đến triển khai, đồng thời tiếp tục phát triển ở các mảng web, backend và AI ứng dụng.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <p>
-      The Smart School Bus Tracking System helps schools manage student transportation by providing
-      real-time bus location updates, route management, and communication between administrators,
-      drivers, and parents.
-    </p>
+      <section class="page-section" id="skills" data-nav-section="skills">
+        <div class="page-hero">
+          <p class="eyebrow" data-i18n="skills.eyebrow">Kỹ năng</p>
+          <h1 data-i18n="skills.title">Các công nghệ và năng lực tôi đang phát triển.</h1>
+          <p data-i18n="skills.intro">
+            Tôi chia kỹ năng thành các nhóm để dễ theo dõi: frontend, backend, database, cloud/devops, công cụ, kỹ năng mềm và ngoại ngữ.
+          </p>
+        </div>
 
-    <p>
-      Administrators can assign buses and drivers, manage routes, and monitor operations. Drivers can
-      view pickup lists and update trip status. Parents can track the bus location and receive alerts
-      when the bus is approaching their child's stop. :contentReference[oaicite:0]{index=0}
-    </p>
+        <div class="skill-groups">
+          <article class="skill-group">
+            <h2 data-i18n="skills.groups.frontend">Frontend</h2>
+            <div class="logo-grid" aria-label="Frontend technologies">
+              <img title="HTML5" alt="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+              <img title="CSS3" alt="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+              <img title="JavaScript" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+              <img title="TypeScript" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+              <img title="React" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+              <img title="Tailwind CSS" alt="Tailwind CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+            </div>
+          </article>
 
+          <article class="skill-group">
+            <h2 data-i18n="skills.groups.backend">Backend</h2>
+            <div class="logo-grid" aria-label="Backend technologies">
+              <img title="Java" alt="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+              <img title="Spring Boot" alt="Spring Boot" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
+              <img title="Node.js" alt="Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+              <img title="NestJS" alt="NestJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" />
+              <img title="Python" alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+              <img title="Django" alt="Django" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
+            </div>
+          </article>
 
-    <h4>System Architecture</h4>
+          <article class="skill-group">
+            <h2 data-i18n="skills.groups.database">Database</h2>
+            <div class="logo-grid" aria-label="Database technologies">
+              <img title="MySQL" alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+              <img title="PostgreSQL" alt="PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+              <img title="MongoDB" alt="MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+              <img title="Redis" alt="Redis" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" />
+            </div>
+          </article>
 
-    <!-- IMAGE PLACEHOLDER -->
-    <div class="architecture-flow">
-      <img
-        src="./img/schoolbus-architecture.png"
-        alt="Smart School Bus System Architecture"
-        style="
-          width: 100%;
-          max-width: 800px;
-          margin: 20px auto;
-          display: block;
-          border-radius: 8px;
-        "
-      />
-    </div>
+          <article class="skill-group">
+            <h2 data-i18n="skills.groups.cloud">Cloud &amp; DevOps</h2>
+            <div class="logo-grid" aria-label="Cloud and DevOps technologies">
+              <img title="Git" alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+              <img title="GitHub" alt="GitHub" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+              <img title="Docker" alt="Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+              <img title="Linux" alt="Linux" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+              <img title="Vercel" alt="Vercel" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" />
+            </div>
+          </article>
 
+          <article class="skill-group">
+            <h2 data-i18n="skills.groups.tools">Công cụ</h2>
+            <div class="logo-grid" aria-label="Development tools">
+              <img title="VS Code" alt="VS Code" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+              <img title="IntelliJ IDEA" alt="IntelliJ IDEA" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" />
+              <img title="Postman" alt="Postman" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+              <img title="Figma" alt="Figma" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+            </div>
+          </article>
 
-    <h4>Key Features</h4>
+          <article class="skill-group text-skills">
+            <h2 data-i18n="skills.groups.soft">Kỹ năng mềm &amp; ngoại ngữ</h2>
+            <ul>
+              <li data-i18n="skills.soft.problem">Phân tích vấn đề và chia nhỏ yêu cầu</li>
+              <li data-i18n="skills.soft.teamwork">Làm việc nhóm và giao tiếp kỹ thuật</li>
+              <li data-i18n="skills.soft.learning">Tự học, đọc tài liệu và thử nghiệm công nghệ mới</li>
+              <li data-i18n="skills.soft.language">Tiếng Việt, tiếng Anh đọc hiểu tài liệu kỹ thuật</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-    <ul>
-      <li>Real-time GPS bus tracking</li>
-      <li>Bus route management and scheduling</li>
-      <li>Driver assignment and student pickup management</li>
-      <li>Parent notifications when bus is approaching</li>
-      <li>Incident reporting by drivers</li>
-      <li>Administrative dashboard for monitoring bus operations</li>
-    </ul>
+      <section class="page-section" id="contact" data-nav-section="contact">
+        <div class="page-hero contact-hero">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Liên hệ</p>
+          <h1 data-i18n="contact.title">Kết nối với tôi.</h1>
+          <p data-i18n="contact.intro">
+            Tôi luôn sẵn sàng trao đổi về cơ hội thực tập, trao đổi học tập, cộng tác hoặc các chủ đề liên quan đến phát triển phần mềm.
+          </p>
+        </div>
 
+        <div class="contact-layout">
+          <div class="contact-list">
+            <article class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="m4 7 8 6 8-6"></path></svg>
+              </span>
+              <div>
+                <span data-i18n="contact.labels.email">Email</span>
+                <a href="mailto:trinhkhangvo@gmail.com">trinhkhangvo@gmail.com</a>
+              </div>
+            </article>
 
-    <h4>Route Optimization using Travelling Salesman Problem</h4>
+            <article class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.11 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.65 2.81a2 2 0 0 1-.45 2.11L8.09 9.86a16 16 0 0 0 6 6l1.22-1.22a2 2 0 0 1 2.11-.45c.91.3 1.85.52 2.81.65A2 2 0 0 1 22 16.92z"></path></svg>
+              </span>
+              <div>
+                <span data-i18n="contact.labels.phone">Số điện thoại</span>
+                <a href="tel:+84000000000">+84 762 779 662</a>
+              </div>
+            </article>
 
-    <p>
-      To improve transportation efficiency, the system applies the
-      <strong>Travelling Salesman Problem (TSP)</strong> algorithm to determine
-      the optimal route for picking up and dropping off students.
-    </p>
+            <article class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </span>
+              <div>
+                <span data-i18n="contact.labels.address">Địa chỉ</span>
+                <strong data-i18n="profile.location">TP. Hồ Chí Minh, Việt Nam</strong>
+              </div>
+            </article>
+          </div>
 
-    <p>
-      The algorithm minimizes total travel distance and ensures that buses
-      visit each pickup location exactly once before returning to the school.
-      This reduces fuel consumption, travel time, and overall operational cost.
-    </p>
+          <aside class="social-panel">
+            <h2 data-i18n="contact.socialTitle">Mạng xã hội</h2>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/twynkhazg/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="" />
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/TRINHKHANGITER" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="" />
+                <span>GitHub</span>
+              </a>
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-5-7.5L5.7 22H2.6l7.3-8.3L2.2 2h6.5l4.5 6.8L18.9 2z"></path></svg>
+                <span>Twitter / X</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
 
+    <footer class="site-footer">
+      <p data-i18n="footer.text">© 2026 Võ Trịnh Khang. Portfolio cá nhân.</p>
+      <div class="footer-links">
+        <a href="https://github.com/TRINHKHANGITER" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/twynkhazg/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </footer>
 
-    <!-- IMAGE PLACEHOLDER -->
-    <div class="architecture-flow">
-      <img
-        src="./img/tsp-route.png"
-        alt="TSP Route Optimization Visualization"
-        style="
-          width: 100%;
-          max-width: 800px;
-          margin: 20px auto;
-          display: block;
-          border-radius: 8px;
-        "
-      />
-    </div>
-
-
-    <h4>Technologies</h4>
-
-    <div class="tech-stack">
-      <span class="tech-badge">Web Dashboard</span>
-      <span class="tech-badge">Real-time Tracking</span>
-      <span class="tech-badge">Travelling Salesman Problem</span>
-      <span class="tech-badge">Route Optimization</span>
-      <span class="tech-badge">GPS Tracking</span>
-      <span class="tech-badge">System Architecture Design</span>
-    </div>
-
-    <p style="margin-top:15px">
-      <strong>Goal:</strong> Improve school bus transportation safety,
-      optimize travel routes, and provide real-time information for
-      administrators, drivers, and parents.
-    </p>
-
-  </div>
-</div>
-        </section>
-      </main>
-    </div>
+    <script src="main.js"></script>
   </body>
 </html>
