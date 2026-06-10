@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Vinh Khanh Audio Guide software architecture</title>
+  <desc id="desc">Three React apps connect to Spring Boot API, realtime services, MySQL, uploads, TTS, payment, Google, and SMTP integrations.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#7c3aed" />
+    </marker>
+    <style>
+      .bg { fill: #fbf7ff; }
+      .box { fill: #ffffff; stroke: #ddd6fe; stroke-width: 2; rx: 14; }
+      .group { fill: #f3e8ff; stroke: #a78bfa; stroke-width: 2; rx: 18; }
+      .title { font: 700 28px Arial, sans-serif; fill: #0f172a; }
+      .label { font: 700 18px Arial, sans-serif; fill: #1e293b; }
+      .small { font: 500 14px Arial, sans-serif; fill: #475569; }
+      .arrow { stroke: #7c3aed; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .dash { stroke-dasharray: 8 8; }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="720" />
+  <text class="title" x="60" y="58">VinhKhanh Audio Guide - Software Architecture</text>
+
+  <rect class="group" x="60" y="105" width="260" height="470" />
+  <text class="label" x="92" y="145">Client Apps</text>
+  <rect class="box" x="92" y="175" width="196" height="66" />
+  <text class="label" x="122" y="202">Customer Web</text>
+  <text class="small" x="122" y="222">shops, audio, tours</text>
+  <rect class="box" x="92" y="268" width="196" height="66" />
+  <text class="label" x="122" y="295">ShopOwner Web</text>
+  <text class="small" x="122" y="315">menu, orders, QR</text>
+  <rect class="box" x="92" y="361" width="196" height="66" />
+  <text class="label" x="122" y="388">Admin Web</text>
+  <text class="small" x="122" y="408">users, shops, analytics</text>
+  <rect class="box" x="92" y="454" width="196" height="66" />
+  <text class="label" x="122" y="481">Maps &amp; QR</text>
+  <text class="small" x="122" y="501">MapLibre, Leaflet, QR</text>
+
+  <rect class="group" x="385" y="105" width="375" height="470" />
+  <text class="label" x="420" y="145">Spring Boot Backend</text>
+  <rect class="box" x="420" y="175" width="305" height="62" />
+  <text class="label" x="450" y="202">REST API</text>
+  <text class="small" x="450" y="222">shops, dishes, audio, orders</text>
+  <rect class="box" x="420" y="260" width="305" height="62" />
+  <text class="label" x="450" y="287">Security &amp; OAuth</text>
+  <text class="small" x="450" y="307">JWT, Google, roles</text>
+  <rect class="box" x="420" y="345" width="305" height="62" />
+  <text class="label" x="450" y="372">Realtime Layer</text>
+  <text class="small" x="450" y="392">STOMP + Socket.IO online count</text>
+  <rect class="box" x="420" y="430" width="305" height="62" />
+  <text class="label" x="450" y="457">Audio &amp; Tour Services</text>
+  <text class="small" x="450" y="477">TTS generation, tour planning</text>
+
+  <rect class="group" x="830" y="105" width="300" height="470" />
+  <text class="label" x="865" y="145">Data &amp; Integrations</text>
+  <rect class="box" x="865" y="175" width="230" height="58" />
+  <text class="label" x="900" y="200">MySQL</text>
+  <text class="small" x="900" y="220">users, shops, orders</text>
+  <rect class="box" x="865" y="255" width="230" height="58" />
+  <text class="label" x="900" y="280">Uploads</text>
+  <text class="small" x="900" y="300">images and audio files</text>
+  <rect class="box" x="865" y="335" width="230" height="58" />
+  <text class="label" x="900" y="360">Python gTTS</text>
+  <text class="small" x="900" y="380">audio generation</text>
+  <rect class="box" x="865" y="415" width="230" height="58" />
+  <text class="label" x="900" y="440">VNPay</text>
+  <text class="small" x="900" y="460">payment gateway</text>
+  <rect class="box" x="865" y="495" width="230" height="58" />
+  <text class="label" x="900" y="520">SMTP Gmail</text>
+  <text class="small" x="900" y="540">password reset email</text>
+
+  <path class="arrow" d="M288 208 H420" />
+  <path class="arrow" d="M288 301 H420" />
+  <path class="arrow dash" d="M288 394 H420" />
+  <path class="arrow" d="M725 206 H865" />
+  <path class="arrow" d="M725 376 H865" />
+  <path class="arrow" d="M725 461 H865" />
+  <path class="arrow" d="M725 286 H865" />
+  <path class="arrow" d="M725 521 H865" />
+
+  <rect class="box" x="205" y="625" width="790" height="58" />
+  <text class="small" x="235" y="650">Customer flow: discover nearby shops -> listen to multilingual audio -> generate food tour -> order dishes -> pay by VNPay.</text>
+  <text class="small" x="235" y="672">Management flow: shop owner manages menu/audio/orders; admin manages users, shops, languages, audio and platform analytics.</text>
+</svg>

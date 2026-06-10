@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">OCR RAG software architecture</title>
+  <desc id="desc">React frontend connects to Django APIs for document ingestion, OCR, vector retrieval, graph retrieval, and Ollama generation.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#0f766e" />
+    </marker>
+    <style>
+      .bg { fill: #f8fafc; }
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 14; }
+      .group { fill: #ecfdf5; stroke: #6ee7b7; stroke-width: 2; rx: 18; }
+      .title { font: 700 28px Arial, sans-serif; fill: #0f172a; }
+      .label { font: 700 18px Arial, sans-serif; fill: #1e293b; }
+      .small { font: 500 14px Arial, sans-serif; fill: #475569; }
+      .arrow { stroke: #0f766e; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .dash { stroke-dasharray: 8 8; }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="720" />
+  <text class="title" x="60" y="58">OCR-RAG - Software Architecture</text>
+
+  <rect class="group" x="60" y="105" width="240" height="470" />
+  <text class="label" x="90" y="145">React + Vite UI</text>
+  <rect class="box" x="90" y="175" width="180" height="70" />
+  <text class="label" x="118" y="205">Classic RAG</text>
+  <text class="small" x="118" y="226">chat + citations</text>
+  <rect class="box" x="90" y="275" width="180" height="70" />
+  <text class="label" x="118" y="305">Graph RAG</text>
+  <text class="small" x="118" y="326">node/edge view</text>
+  <rect class="box" x="90" y="375" width="180" height="70" />
+  <text class="label" x="118" y="405">Hybrid Mode</text>
+  <text class="small" x="118" y="426">vector + graph</text>
+
+  <rect class="group" x="365" y="105" width="385" height="470" />
+  <text class="label" x="400" y="145">Django API</text>
+  <rect class="box" x="400" y="175" width="315" height="64" />
+  <text class="label" x="430" y="202">Projects / Documents / Chats</text>
+  <text class="small" x="430" y="223">CRUD and conversation scope</text>
+  <rect class="box" x="400" y="260" width="315" height="64" />
+  <text class="label" x="430" y="287">Document Ingestion</text>
+  <text class="small" x="430" y="308">PDF, DOCX, image, OCR</text>
+  <rect class="box" x="400" y="345" width="315" height="64" />
+  <text class="label" x="430" y="372">Retrieval Engine</text>
+  <text class="small" x="430" y="393">FAISS + BM25 + CrossEncoder</text>
+  <rect class="box" x="400" y="430" width="315" height="64" />
+  <text class="label" x="430" y="457">Graph RAG Engine</text>
+  <text class="small" x="430" y="478">nodes, edges, evidence chunks</text>
+
+  <rect class="group" x="820" y="105" width="310" height="470" />
+  <text class="label" x="855" y="145">Storage &amp; Runtime</text>
+  <rect class="box" x="855" y="175" width="240" height="62" />
+  <text class="label" x="890" y="202">PostgreSQL</text>
+  <text class="small" x="890" y="222">metadata, chunks, graph</text>
+  <rect class="box" x="855" y="260" width="240" height="62" />
+  <text class="label" x="890" y="287">FAISS Index</text>
+  <text class="small" x="890" y="307">semantic vectors</text>
+  <rect class="box" x="855" y="345" width="240" height="62" />
+  <text class="label" x="890" y="372">Tesseract OCR</text>
+  <text class="small" x="890" y="392">eng+vie extraction</text>
+  <rect class="box" x="855" y="430" width="240" height="62" />
+  <text class="label" x="890" y="457">Ollama LLM</text>
+  <text class="small" x="890" y="477">qwen model generation</text>
+
+  <path class="arrow" d="M270 210 H400" />
+  <path class="arrow" d="M270 310 H400" />
+  <path class="arrow" d="M270 410 H400" />
+  <path class="arrow" d="M715 207 H855" />
+  <path class="arrow" d="M715 292 H855" />
+  <path class="arrow dash" d="M715 377 H855" />
+  <path class="arrow" d="M715 462 H855" />
+
+  <rect class="box" x="205" y="625" width="790" height="58" />
+  <text class="small" x="235" y="650">Ingestion: upload file -> extract native/OCR text -> split chunks -> embed -> rebuild FAISS and optional graph index.</text>
+  <text class="small" x="235" y="672">Question answering: scope documents -> semantic/keyword/graph retrieval -> rerank -> Ollama answer -> save citations.</text>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Smart School Bus Tracking System software architecture</title>
+  <desc id="desc">React role-based apps connect to NestJS REST APIs and Socket.IO gateways backed by MySQL and OSRM routing.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#ea580c" />
+    </marker>
+    <style>
+      .bg { fill: #fff7ed; }
+      .box { fill: #ffffff; stroke: #fed7aa; stroke-width: 2; rx: 14; }
+      .group { fill: #ffedd5; stroke: #fb923c; stroke-width: 2; rx: 18; }
+      .title { font: 700 28px Arial, sans-serif; fill: #0f172a; }
+      .label { font: 700 18px Arial, sans-serif; fill: #1e293b; }
+      .small { font: 500 14px Arial, sans-serif; fill: #475569; }
+      .arrow { stroke: #ea580c; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .dash { stroke-dasharray: 8 8; }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="720" />
+  <text class="title" x="60" y="58">Smart School Bus Tracking System - Software Architecture</text>
+
+  <rect class="group" x="60" y="105" width="245" height="470" />
+  <text class="label" x="92" y="145">React Frontend</text>
+  <rect class="box" x="92" y="175" width="180" height="68" />
+  <text class="label" x="122" y="203">Admin</text>
+  <text class="small" x="122" y="224">manage and monitor</text>
+  <rect class="box" x="92" y="272" width="180" height="68" />
+  <text class="label" x="122" y="300">Driver</text>
+  <text class="small" x="122" y="321">trips and reports</text>
+  <rect class="box" x="92" y="369" width="180" height="68" />
+  <text class="label" x="122" y="397">Parent</text>
+  <text class="small" x="122" y="418">track child bus</text>
+  <rect class="box" x="92" y="466" width="180" height="68" />
+  <text class="label" x="122" y="494">Leaflet Maps</text>
+  <text class="small" x="122" y="515">routes, stops, bus</text>
+
+  <rect class="group" x="370" y="105" width="390" height="470" />
+  <text class="label" x="405" y="145">NestJS Backend</text>
+  <rect class="box" x="405" y="175" width="320" height="62" />
+  <text class="label" x="435" y="202">REST Modules</text>
+  <text class="small" x="435" y="222">student, driver, bus, schedule</text>
+  <rect class="box" x="405" y="260" width="320" height="62" />
+  <text class="label" x="435" y="287">Auth &amp; Role Guards</text>
+  <text class="small" x="435" y="307">JWT, ADMIN, DRIVER, PARENT</text>
+  <rect class="box" x="405" y="345" width="320" height="62" />
+  <text class="label" x="435" y="372">Tracking Gateway</text>
+  <text class="small" x="435" y="392">Socket.IO schedule rooms</text>
+  <rect class="box" x="405" y="430" width="320" height="62" />
+  <text class="label" x="435" y="457">Routing Service</text>
+  <text class="small" x="435" y="477">OSRM + VRP/TSP heuristic</text>
+
+  <rect class="group" x="830" y="105" width="300" height="470" />
+  <text class="label" x="865" y="145">Data &amp; External APIs</text>
+  <rect class="box" x="865" y="175" width="230" height="64" />
+  <text class="label" x="900" y="203">MySQL</text>
+  <text class="small" x="900" y="224">school transport data</text>
+  <rect class="box" x="865" y="265" width="230" height="64" />
+  <text class="label" x="900" y="293">OSRM</text>
+  <text class="small" x="900" y="314">distance matrix, routes</text>
+  <rect class="box" x="865" y="355" width="230" height="64" />
+  <text class="label" x="900" y="383">Socket.IO Rooms</text>
+  <text class="small" x="900" y="404">tracking, notification, chat</text>
+  <rect class="box" x="865" y="445" width="230" height="64" />
+  <text class="label" x="900" y="473">Seed Data</text>
+  <text class="small" x="900" y="494">demo users and schedules</text>
+
+  <path class="arrow" d="M272 209 H405" />
+  <path class="arrow" d="M272 306 H405" />
+  <path class="arrow dash" d="M272 403 H405" />
+  <path class="arrow" d="M725 206 H865" />
+  <path class="arrow" d="M725 376 H865" />
+  <path class="arrow" d="M725 461 H865" />
+  <path class="arrow" d="M725 291 H865" />
+
+  <rect class="box" x="205" y="625" width="790" height="58" />
+  <text class="small" x="235" y="650">Operational flow: admin creates route/schedule -> driver runs trip and sends location -> backend broadcasts to parent/admin maps.</text>
+  <text class="small" x="235" y="672">Optimization flow: stations/timetable -> OSRM distance matrix -> greedy clustering + nearest-neighbor TSP -> route geometry.</text>
+</svg>
