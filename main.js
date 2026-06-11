@@ -25,7 +25,8 @@
       },
       home: {
         eyebrow: "Portfolio cá nhân",
-        title: "Xin chào, tôi là Võ Trịnh Khang.",
+        hello: "Xin chào, ",
+        title: "Tôi là Võ Trịnh Khang.",
         description:
           "Tôi là sinh viên năm ba ngành Kỹ thuật phần mềm tại Trường Đại học Sài Gòn, tập trung xây dựng ứng dụng web, hệ thống quản lý và các sản phẩm phần mềm có trải nghiệm rõ ràng.",
         primaryCta: "Xem giới thiệu",
@@ -110,7 +111,8 @@
       },
       home: {
         eyebrow: "Personal portfolio",
-        title: "Hi, I am Vo Trinh Khang.",
+        hello: "Hi, ",
+        title: "I am Vo Trinh Khang.",
         description:
           "I am a third-year Software Engineering student at Saigon University, focused on building web applications, management systems, and software products with clear user experiences.",
         primaryCta: "Read about me",
