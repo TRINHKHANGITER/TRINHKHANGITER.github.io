@@ -25,7 +25,7 @@
       },
       home: {
         eyebrow: "Portfolio cá nhân",
-        hello: "Xin chào, ",
+        hello: "Xin chào,",
         title: "Tôi là Võ Trịnh Khang.",
         description:
           "Tôi là sinh viên năm ba ngành Kỹ thuật phần mềm tại Trường Đại học Sài Gòn, tập trung xây dựng ứng dụng web, hệ thống quản lý và các sản phẩm phần mềm có trải nghiệm rõ ràng.",
