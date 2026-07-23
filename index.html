@@ -33,6 +33,7 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="#home" data-section="home" data-i18n="nav.home">Trang chủ</a>
         <a href="#about" data-section="about" data-i18n="nav.about">Giới thiệu</a>
+        <a href="#projects" data-section="projects" data-i18n="nav.projects">Dự án</a>
         <a href="#skills" data-section="skills" data-i18n="nav.skills">Kỹ năng</a>
         <a href="#contact" data-section="contact" data-i18n="nav.contact">Liên hệ</a>
       </nav>
@@ -136,6 +137,118 @@
               </p>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section class="page-section" id="projects" data-nav-section="projects">
+        <div class="page-hero">
+          <p class="eyebrow" data-i18n="projects.eyebrow">Dự án</p>
+          <h1 data-i18n="projects.title">Các project tôi đã xây dựng và phân tích.</h1>
+          <p data-i18n="projects.intro">
+            Bốn project dưới đây thể hiện kinh nghiệm của tôi với hệ thống full-stack, realtime, bản đồ, thanh toán, OCR và RAG.
+          </p>
+        </div>
+
+        <div class="project-grid" aria-label="Featured projects">
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-number">I</span>
+              <span class="project-role" data-i18n="projects.items.cinema.role">FULL-STACK</span>
+            </div>
+            <h2 data-i18n="projects.items.cinema.title">Cinema Booking System</h2>
+            <p class="project-meta" data-i18n="projects.items.cinema.meta">2026 · Full-stack Project</p>
+            <p class="project-summary" data-i18n="projects.items.cinema.summary">
+              Hệ thống đặt vé rạp phim với luồng khách hàng, trang quản trị, thanh toán online và trợ lý chatbot.
+            </p>
+            <div class="project-tags" aria-label="Cinema Booking System technologies">
+              <span>Spring Boot</span>
+              <span>Java</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>MySQL</span>
+              <span>WebSocket</span>
+            </div>
+            <ul class="project-highlights">
+              <li data-i18n="projects.items.cinema.highlights.0">Xây dựng luồng đặt vé gồm chọn phim, suất chiếu, ghế, combo và thanh toán VNPay.</li>
+              <li data-i18n="projects.items.cinema.highlights.1">Thiết kế quản trị cho phim, rạp, phòng, ghế, giá vé, suất chiếu, đơn hàng và dashboard doanh thu.</li>
+              <li data-i18n="projects.items.cinema.highlights.2">Tích hợp giữ ghế realtime, email/OTP xác thực tài khoản và chatbot Gemini hỗ trợ tra cứu.</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-number">II</span>
+              <span class="project-role" data-i18n="projects.items.audio.role">AUDIO GUIDE</span>
+            </div>
+            <h2 data-i18n="projects.items.audio.title">VinhKhanh Audio Guide</h2>
+            <p class="project-meta" data-i18n="projects.items.audio.meta">2026 · Seminar Project</p>
+            <p class="project-summary" data-i18n="projects.items.audio.summary">
+              Nền tảng khám phá khu ẩm thực Vĩnh Khánh với audio đa ngôn ngữ, bản đồ, tour ăn uống và quản trị cửa hàng.
+            </p>
+            <div class="project-tags" aria-label="VinhKhanh Audio Guide technologies">
+              <span>Spring Boot</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>MySQL</span>
+              <span>Socket.IO</span>
+              <span>VNPay</span>
+            </div>
+            <ul class="project-highlights">
+              <li data-i18n="projects.items.audio.highlights.0">Phát triển customer web, admin web và shop-owner web cho khám phá quán, món ăn và đơn hàng.</li>
+              <li data-i18n="projects.items.audio.highlights.1">Tích hợp audio thuyết minh theo ngôn ngữ, Python TTS, dịch nội dung, bản đồ và gợi ý tour theo ngân sách.</li>
+              <li data-i18n="projects.items.audio.highlights.2">Xây dựng các luồng quản lý audio, món ăn, cửa hàng, QR, thống kê và thanh toán VNPay.</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-number">III</span>
+              <span class="project-role" data-i18n="projects.items.rag.role">AI / RAG</span>
+            </div>
+            <h2 data-i18n="projects.items.rag.title">OCR-RAG Workspace</h2>
+            <p class="project-meta" data-i18n="projects.items.rag.meta">2026 · AI Research Project</p>
+            <p class="project-summary" data-i18n="projects.items.rag.summary">
+              Workspace hỏi đáp tài liệu nội bộ kết hợp OCR, Classic RAG, Graph RAG và truy vết nguồn trả lời.
+            </p>
+            <div class="project-tags" aria-label="OCR-RAG Workspace technologies">
+              <span>Django</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>PostgreSQL</span>
+              <span>FAISS</span>
+              <span>Ollama</span>
+            </div>
+            <ul class="project-highlights">
+              <li data-i18n="projects.items.rag.highlights.0">Xây dựng pipeline upload tài liệu thường và OCR, hỗ trợ tiếng Việt/tiếng Anh, chunking và quản lý project.</li>
+              <li data-i18n="projects.items.rag.highlights.1">Kết hợp vector search, BM25, CrossEncoder và Graph RAG để tăng độ phủ ngữ cảnh khi hỏi đáp.</li>
+              <li data-i18n="projects.items.rag.highlights.2">Thiết kế giao diện chat có citation, xem chunk, xem file, rebuild graph và trực quan hóa node/edge.</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-number">IV</span>
+              <span class="project-role" data-i18n="projects.items.bus.role">REALTIME MAP</span>
+            </div>
+            <h2 data-i18n="projects.items.bus.title">Smart School Bus Tracking System</h2>
+            <p class="project-meta" data-i18n="projects.items.bus.meta">2026 · Academic Project</p>
+            <p class="project-summary" data-i18n="projects.items.bus.summary">
+              Hệ thống quản lý và theo dõi xe buýt đưa đón học sinh theo thời gian thực cho admin, tài xế và phụ huynh.
+            </p>
+            <div class="project-tags" aria-label="Smart School Bus Tracking System technologies">
+              <span>NestJS</span>
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>MySQL</span>
+              <span>Socket.IO</span>
+              <span>Leaflet</span>
+            </div>
+            <ul class="project-highlights">
+              <li data-i18n="projects.items.bus.highlights.0">Xây dựng các vai trò admin, driver và parent với luồng quản lý học sinh, phụ huynh, tài xế, xe và lịch trình.</li>
+              <li data-i18n="projects.items.bus.highlights.1">Tích hợp bản đồ, marker xe/trạm/trường học, cập nhật vị trí realtime và thông báo qua Socket.IO.</li>
+              <li data-i18n="projects.items.bus.highlights.2">Phát triển lập lịch, định tuyến chuyến đi, tối ưu lộ trình theo hướng TSP và báo cáo sự cố từ tài xế.</li>
+            </ul>
+          </article>
         </div>
       </section>
 

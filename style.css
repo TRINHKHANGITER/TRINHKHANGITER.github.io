@@ -418,6 +418,7 @@ h2 {
 .profile-card,
 .about-content article,
 .skill-group,
+.project-card,
 .contact-item,
 .social-panel {
   border: 1px solid var(--line);
@@ -431,6 +432,7 @@ h2 {
 .profile-card:hover,
 .about-content article:hover,
 .skill-group:hover,
+.project-card:hover,
 .contact-item:hover,
 .social-panel:hover {
   transform: translateY(-3px);
@@ -533,6 +535,141 @@ h2 {
 .about-content p {
   margin-bottom: 0;
   color: var(--muted);
+}
+
+#projects {
+  background: repeating-linear-gradient(
+    115deg,
+    var(--secondary) 0 18px,
+    var(--primary) 18px 20px,
+    var(--secondary) 20px 38px
+  );
+}
+
+#projects .page-hero,
+#projects .project-grid {
+  width: min(1180px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+#projects .page-hero {
+  padding-top: 74px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+  gap: 22px;
+  padding-bottom: 78px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 30px;
+  background: var(--white);
+}
+
+.project-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-number {
+  color: var(--primary);
+  font-family: var(--font-serif);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 0.9;
+}
+
+.project-role {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  max-width: 100%;
+  padding: 0 17px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.project-card h2 {
+  margin: 26px 0 12px;
+  font-size: 34px;
+}
+
+.project-meta {
+  margin-bottom: 22px;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.project-summary {
+  margin-bottom: 24px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.project-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.project-highlights {
+  display: grid;
+  gap: 14px;
+  margin: 26px 0 0;
+  padding: 0;
+  color: var(--muted);
+  list-style: none;
+}
+
+.project-highlights li {
+  position: relative;
+  min-height: 28px;
+  padding-left: 30px;
+}
+
+.project-highlights li::before {
+  content: "";
+  position: absolute;
+  top: 0.62em;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--accent);
+  border-radius: 999px;
+  background: var(--white);
+  box-shadow: 0 0 0 4px var(--accent-soft);
 }
 
 #skills {
@@ -881,6 +1018,8 @@ h2 {
   .stats-strip,
   #about,
   #contact,
+  #projects .page-hero,
+  #projects .project-grid,
   #skills .page-hero,
   #skills .skill-groups,
   .site-footer {
@@ -1101,6 +1240,24 @@ h2 {
     padding-bottom: 62px;
   }
 
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-bottom: 62px;
+  }
+
+  .project-card {
+    padding: 22px;
+  }
+
+  .project-card h2 {
+    font-size: 32px;
+  }
+
+  .project-number {
+    font-size: 44px;
+  }
+
   .skill-group {
     padding: 22px;
   }
@@ -1200,6 +1357,8 @@ h2 {
   .stats-strip,
   #about,
   #contact,
+  #projects .page-hero,
+  #projects .project-grid,
   #skills .page-hero,
   #skills .skill-groups,
   .site-footer,
@@ -1268,6 +1427,7 @@ h2 {
   .profile-card,
   .about-content article,
   .skill-group,
+  .project-card,
   .contact-item,
   .social-panel {
     border-radius: 22px;
@@ -1276,8 +1436,19 @@ h2 {
   .stats-strip article,
   .about-content article,
   .skill-group,
+  .project-card,
   .social-panel {
     padding: 20px;
+  }
+
+  .project-card h2 {
+    font-size: 30px;
+  }
+
+  .project-role {
+    min-height: 32px;
+    padding-inline: 13px;
+    font-size: 12px;
   }
 
   .logo-grid {

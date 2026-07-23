@@ -14,6 +14,7 @@
       nav: {
         home: "Trang chủ",
         about: "Giới thiệu",
+        projects: "Dự án",
         skills: "Kỹ năng",
         contact: "Liên hệ",
         resume: "Resume",
@@ -54,6 +55,62 @@
         goalTitle: "Mục tiêu nghề nghiệp",
         goalText:
           "Mục tiêu của tôi là trở thành lập trình viên phần mềm có nền tảng full-stack vững, có khả năng xây dựng sản phẩm thực tế từ ý tưởng đến triển khai, đồng thời tiếp tục phát triển ở các mảng web, backend và AI ứng dụng.",
+      },
+      projects: {
+        eyebrow: "Dự án",
+        title: "Các project tôi đã xây dựng và phân tích.",
+        intro:
+          "Bốn project dưới đây thể hiện kinh nghiệm của tôi với hệ thống full-stack, realtime, bản đồ, thanh toán, OCR và RAG.",
+        items: {
+          cinema: {
+            role: "FULL-STACK",
+            title: "Cinema Booking System",
+            meta: "2026 · Full-stack Project",
+            summary:
+              "Hệ thống đặt vé rạp phim với luồng khách hàng, trang quản trị, thanh toán online và trợ lý chatbot.",
+            highlights: [
+              "Xây dựng luồng đặt vé gồm chọn phim, suất chiếu, ghế, combo và thanh toán VNPay.",
+              "Thiết kế quản trị cho phim, rạp, phòng, ghế, giá vé, suất chiếu, đơn hàng và dashboard doanh thu.",
+              "Tích hợp giữ ghế realtime, email/OTP xác thực tài khoản và chatbot Gemini hỗ trợ tra cứu.",
+            ],
+          },
+          audio: {
+            role: "AUDIO GUIDE",
+            title: "VinhKhanh Audio Guide",
+            meta: "2026 · Seminar Project",
+            summary:
+              "Nền tảng khám phá khu ẩm thực Vĩnh Khánh với audio đa ngôn ngữ, bản đồ, tour ăn uống và quản trị cửa hàng.",
+            highlights: [
+              "Phát triển customer web, admin web và shop-owner web cho khám phá quán, món ăn và đơn hàng.",
+              "Tích hợp audio thuyết minh theo ngôn ngữ, Python TTS, dịch nội dung, bản đồ và gợi ý tour theo ngân sách.",
+              "Xây dựng các luồng quản lý audio, món ăn, cửa hàng, QR, thống kê và thanh toán VNPay.",
+            ],
+          },
+          rag: {
+            role: "AI / RAG",
+            title: "OCR-RAG Workspace",
+            meta: "2026 · AI Research Project",
+            summary:
+              "Workspace hỏi đáp tài liệu nội bộ kết hợp OCR, Classic RAG, Graph RAG và truy vết nguồn trả lời.",
+            highlights: [
+              "Xây dựng pipeline upload tài liệu thường và OCR, hỗ trợ tiếng Việt/tiếng Anh, chunking và quản lý project.",
+              "Kết hợp vector search, BM25, CrossEncoder và Graph RAG để tăng độ phủ ngữ cảnh khi hỏi đáp.",
+              "Thiết kế giao diện chat có citation, xem chunk, xem file, rebuild graph và trực quan hóa node/edge.",
+            ],
+          },
+          bus: {
+            role: "REALTIME MAP",
+            title: "Smart School Bus Tracking System",
+            meta: "2026 · Academic Project",
+            summary:
+              "Hệ thống quản lý và theo dõi xe buýt đưa đón học sinh theo thời gian thực cho admin, tài xế và phụ huynh.",
+            highlights: [
+              "Xây dựng các vai trò admin, driver và parent với luồng quản lý học sinh, phụ huynh, tài xế, xe và lịch trình.",
+              "Tích hợp bản đồ, marker xe/trạm/trường học, cập nhật vị trí realtime và thông báo qua Socket.IO.",
+              "Phát triển lập lịch, định tuyến chuyến đi, tối ưu lộ trình theo hướng TSP và báo cáo sự cố từ tài xế.",
+            ],
+          },
+        },
       },
       skills: {
         eyebrow: "Kỹ năng",
@@ -100,6 +157,7 @@
       nav: {
         home: "Home",
         about: "About",
+        projects: "Projects",
         skills: "Skills",
         contact: "Contact",
         resume: "Resume",
@@ -140,6 +198,62 @@
         goalTitle: "Career goal",
         goalText:
           "My goal is to become a software developer with a solid full-stack foundation, able to build practical products from idea to deployment while continuing to grow in web, backend, and applied AI.",
+      },
+      projects: {
+        eyebrow: "Projects",
+        title: "Projects I have built and analyzed.",
+        intro:
+          "These four projects show my work across full-stack systems, realtime maps, online payment, OCR, and RAG.",
+        items: {
+          cinema: {
+            role: "FULL-STACK",
+            title: "Cinema Booking System",
+            meta: "2026 · Full-stack Project",
+            summary:
+              "A cinema ticket booking system with customer flows, an admin portal, online payment, and a chatbot assistant.",
+            highlights: [
+              "Built the ticket-booking flow for movie search, showtime selection, seat holding, combos, and VNPay checkout.",
+              "Designed admin management for movies, cinemas, rooms, seats, prices, showtimes, orders, and revenue dashboards.",
+              "Integrated realtime seat updates, email/OTP account verification, and a Gemini chatbot for user support.",
+            ],
+          },
+          audio: {
+            role: "AUDIO GUIDE",
+            title: "VinhKhanh Audio Guide",
+            meta: "2026 · Seminar Project",
+            summary:
+              "A multilingual food-tour platform for Vinh Khanh Street with audio guides, maps, tour planning, and shop management.",
+            highlights: [
+              "Developed customer, admin, and shop-owner web apps for discovering shops, dishes, audio content, and orders.",
+              "Integrated multilingual audio narration, Python TTS, translation, maps, and budget-based food-tour suggestions.",
+              "Built management flows for audio, dishes, shops, QR codes, statistics, and VNPay payments.",
+            ],
+          },
+          rag: {
+            role: "AI / RAG",
+            title: "OCR-RAG Workspace",
+            meta: "2026 · AI Research Project",
+            summary:
+              "An internal document Q&A workspace combining OCR, Classic RAG, Graph RAG, and source tracking.",
+            highlights: [
+              "Built document upload and OCR pipelines with Vietnamese/English support, chunking, and project management.",
+              "Combined vector search, BM25, CrossEncoder reranking, and Graph RAG to improve context coverage.",
+              "Designed a chat UI with citations, chunk/file viewing, graph rebuilding, and node/edge visualization.",
+            ],
+          },
+          bus: {
+            role: "REALTIME MAP",
+            title: "Smart School Bus Tracking System",
+            meta: "2026 · Academic Project",
+            summary:
+              "A realtime school bus management and tracking system for admins, drivers, and parents.",
+            highlights: [
+              "Built role-based flows for admins, drivers, and parents across students, guardians, drivers, buses, and schedules.",
+              "Integrated maps, school/bus/station markers, realtime location updates, and Socket.IO notifications.",
+              "Developed scheduling, trip routing, TSP-style route optimization, and driver incident reporting.",
+            ],
+          },
+        },
       },
       skills: {
         eyebrow: "Skills",
@@ -260,28 +374,42 @@
   function observeActiveSection() {
     const sections = [...document.querySelectorAll("[data-nav-section]")];
 
-    if (!("IntersectionObserver" in window)) {
-      setActiveSection(location.hash.replace("#", "") || "home");
+    if (sections.length === 0) {
+      setActiveSection("home");
       return;
     }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    let isTicking = false;
 
-        if (visible) {
-          setActiveSection(visible.target.dataset.navSection);
+    function updateActiveSection() {
+      const headerHeight = document.querySelector(".site-header")?.offsetHeight ?? 0;
+      const checkpoint = headerHeight + Math.min(window.innerHeight * 0.28, 260);
+      let activeSectionId = sections[0].dataset.navSection;
+
+      sections.forEach((section) => {
+        if (section.getBoundingClientRect().top <= checkpoint) {
+          activeSectionId = section.dataset.navSection;
         }
-      },
-      {
-        rootMargin: "-35% 0px -50% 0px",
-        threshold: [0.08, 0.18, 0.32, 0.48],
-      },
-    );
+      });
 
-    sections.forEach((section) => observer.observe(section));
+      setActiveSection(activeSectionId || "home");
+    }
+
+    function requestActiveSectionUpdate() {
+      if (isTicking) {
+        return;
+      }
+
+      isTicking = true;
+      requestAnimationFrame(() => {
+        isTicking = false;
+        updateActiveSection();
+      });
+    }
+
+    window.addEventListener("scroll", requestActiveSectionUpdate, { passive: true });
+    window.addEventListener("resize", requestActiveSectionUpdate);
+    updateActiveSection();
   }
 
   function bindLanguageSwitch() {
@@ -339,14 +467,14 @@
     document.documentElement.addEventListener("pointerleave", hideCursor);
     window.addEventListener("blur", hideCursor);
 
-    document.querySelectorAll("a, button, .logo-grid img, .contact-item, .skill-group").forEach((element) => {
+    document.querySelectorAll("a, button, .logo-grid img, .contact-item, .skill-group, .project-card").forEach((element) => {
       element.addEventListener("pointerenter", () => dot.classList.add("is-hovering"));
       element.addEventListener("pointerleave", () => dot.classList.remove("is-hovering"));
     });
 
     document
       .querySelectorAll(
-        ".stats-strip article, .profile-card, .about-content article, .skill-group, .contact-item, .social-panel, .portrait-panel",
+        ".stats-strip article, .profile-card, .about-content article, .skill-group, .project-card, .contact-item, .social-panel, .portrait-panel",
       )
       .forEach((card) => {
         card.addEventListener("pointermove", (event) => {
